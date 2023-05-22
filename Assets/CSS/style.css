@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    margin: 0 auto;
+    width: 60%;
+}
+h1 {
+    text-shadow: 2px 2px #949693;;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+}
+.lado-izquierdo {
+    width: 47%;
+}
+.presupuesto {
+    border: 2px solid rgb(35 140 35);
+    border-radius: 10px;
+    background-color: rgb(235 255 235);
+    padding: 5%;
+    margin-bottom: 40px;
+}
+.gastos {
+    border: 2px solid rgb(156 17 17);
+    border-radius: 10px;
+    background-color: rgb(255 214 214);
+    padding: 5%;
+}
+form div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+form div label {
+    margin-bottom: 10px;
+}
+input:focus {
+    outline: none;
+}
+.form1 div input {
+    height: 25px;
+    background-color: rgb(235 255 235);
+    border: 1px solid  rgb(184, 185, 184);
+    border-radius: 5px;
+}
+.form2 div input {
+    height: 25px;
+    background-color: rgb(255 214 214);
+    border: 1px solid  rgb(184, 185, 184);
+    border-radius: 5px;
+}
+button {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+#boton1 {
+    color: rgb(35 140 35);
+    border: 1px solid rgb(35 140 35);
+}
+#boton2 {
+    color: rgb(156 17 17);
+    border: 1px solid rgb(156 17 17);
+}
+
+.lado-derecho {
+    display: flex;
+    flex-direction: column;
+    width:47%
+}
+.detalle-presupuesto {
+    height: 200px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table thead tr th {
+    text-align: start;
+}
+#tabla1 thead tr th {
+    width: 30%;
+    /* padding-right: 50px; */
+}
+#th2, #td-gastos {
+    text-align: center;
+}
+#th3, #td-saldo {
+    text-align: end;
+}
+#tr-head th {
+    padding-bottom: 7px;
+}
+#th-tabla2 {
+    border-bottom: 1px solid gray;
+}
+img {
+    width: 18px;
+    cursor: pointer;
+}
+
+/* Dispositivos extra pequeños (teléfonos, 600px y menos) */ 
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .lado-derecho, .lado-izquierdo {
+        width:100%
+    }
+    .lado-derecho {
+        margin-top: 40px;
+    }
+    .detalle-presupuesto {
+        height: 90px;
+    }
+}
+/* Dispositivos pequeños (tablets verticales y teléfonos grandes, 600px y más) */ 
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .container {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .lado-derecho, .lado-izquierdo {
+        width:80%
+    }
+    .lado-derecho {
+        margin-top: 40px;
+    }
+    .detalle-presupuesto {
+        height: 90px;
+    }
+} 

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto App</title>
+    <link rel="icon" href="Assets\Img\icon-money.png">
+    <link rel="stylesheet" href="Assets\CSS\style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="titulo">
+            <h1>PRESUPUESTO APP</h1>
+        </div>
+        <main>
+            <div class="lado-izquierdo">
+                <div class="presupuesto">
+                    <form class="form1" action="">
+                        <div>
+                            <label for="presupuesto">Ingresa tu presupuesto</label>
+                            <input type="number" name="presupuesto" id="presupuesto">
+                        </div>
+                        <button id="boton1" type="button">Calcular</button>
+                    </form>
+                </div>
+                <div class="gastos">
+                    <form class="form2" action="">
+                        <div>
+                            <label for="nombre-gasto">Ingresa el nombre del gasto</label>
+                            <input type="text" name="nombre-gasto" id="nombre-gasto">
+                        </div>
+                        <div>
+                            <label for="valor-gasto">Ingresa la cantidad del gasto</label>
+                            <input type="number" name="valor-gasto" id="valor-gasto">
+                        </div>
+                        <button id="boton2" type="button">Añadir gasto</button>
+                    </form>
+                </div>
+            </div>
+            <div class="lado-derecho">
+                <div class="detalle-presupuesto">
+                    <table id="tabla1">
+                        <thead>
+                            <tr id="tr-head">
+                                <th id="th1">Presupuesto</th>
+                                <th id="th2">Gastos</th>
+                                <th id="th3">Saldo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="td-presupuesto"></td>
+                                <td id="td-gastos"></td>
+                                <td id="td-saldo"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="detalle-gastos">
+                    <table id="tabla2">
+                        <thead>
+                            <tr id="th-tabla2">
+                                <th>Gasto</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody-gastos">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="Assets\JS\script.js"></script>
+</body>
+</html>
